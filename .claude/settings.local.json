@@ -14,7 +14,9 @@
       "Bash(npm run dev:*)",
       "Bash(npm run build:*)",
       "Bash(npm run deploy:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd project management dashboard with E2B sandboxes\n\nImplement full-stack Next.js project management platform with:\n\nFeatures:\n- User authentication (Better Auth + Cloudflare D1)\n- Project CRUD operations with E2B sandbox integration\n- Monaco code editor (VS Code in browser)\n- Live preview with iframe\n- File management (read, write, delete, create)\n- Real-time file synchronization with E2B sandboxes\n\nArchitecture:\n- Frontend: Next.js 15, React 19, Tailwind CSS\n- Backend: Cloudflare Workers (Edge Runtime)\n- Database: Cloudflare D1 (SQLite) with Drizzle ORM\n- Storage: Cloudflare R2 buckets\n- Sandboxes: E2B (1 sandbox per project)\n- Editor: Monaco Editor (@monaco-editor/react)\n\nComponents:\n- AuthGuard: Protected route wrapper\n- CodeEditor: Monaco editor integration\n- FileTree: Collapsible file browser\n- LivePreview: iframe preview with refresh\n- ProjectCard: Dashboard project cards\n\nAPI Routes:\n- /api/auth - Authentication (signin, signup, session)\n- /api/projects - Project CRUD operations\n- /api/files - File management in E2B sandboxes\n\nDatabase Schema:\n- users: User accounts with authentication\n- projects: Project metadata and sandbox IDs\n- project_files: File cache and backups\n- sessions: User session management\n\nConfiguration:\n- Cloudflare D1 database configured\n- R2 bucket for file storage\n- Wrangler secrets for E2B_API_KEY and AUTH_SECRET\n- Complete setup guides (CLOUDFLARE_SETUP.md, QUICK_START.md)\n\nDocumentation:\n- README.md: Complete project documentation\n- CLOUDFLARE_SETUP.md: Detailed setup instructions\n- QUICK_START.md: 10-minute quick start guide\n- .env.example: Environment variables template\n\n🚀 Generated with Claude Code\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
