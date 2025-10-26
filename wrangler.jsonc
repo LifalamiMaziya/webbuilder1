@@ -14,5 +14,21 @@
   "observability": {
     "enabled": true
   },
-  "upload_source_maps": true
+  "upload_source_maps": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "webbuilder-db",
+      "database_id": "ba94f0b6-3a30-4910-8b9c-3e73e8e29926"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "webbuilder-files"
+    }
+  ],
+  "vars": {
+    "E2B_API_KEY": ""
+  }
 }
