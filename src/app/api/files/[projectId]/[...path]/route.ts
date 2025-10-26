@@ -4,7 +4,7 @@ import { requireAuth } from '@/lib/auth';
 import { getE2BClient } from '@/lib/e2b';
 import { eq, and } from 'drizzle-orm';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // GET /api/files/[projectId]/[...path] - Read a file
 export async function GET(

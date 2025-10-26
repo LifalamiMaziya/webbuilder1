@@ -1,7 +1,7 @@
 import { createAuth } from '@/lib/auth';
 import { NextRequest } from 'next/server';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 export async function GET(request: NextRequest) {
   const env = process.env as any;

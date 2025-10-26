@@ -4,7 +4,7 @@ import { requireAuth } from '@/lib/auth';
 import { getE2BClient } from '@/lib/e2b';
 import { eq, and } from 'drizzle-orm';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // GET /api/projects/[id] - Get a single project
 export async function GET(

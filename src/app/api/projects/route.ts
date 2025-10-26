@@ -5,7 +5,7 @@ import { getE2BClient } from '@/lib/e2b';
 import { v4 as uuidv4 } from 'uuid';
 import { eq } from 'drizzle-orm';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 // GET /api/projects - List all projects for the current user
 export async function GET(request: NextRequest) {
